@@ -1,0 +1,25 @@
+-- Aggregate Fonksiyonlar - MIN, MAX, SUM, AVG 
+
+--AVG fonksiyonunu kullandığımız sayısal değerlerden oluşan sütunun ortalama değerini alırız.
+
+--örneğimizde film tablosunda bulunan length sütunundaki değerlerin ortalamasını alıyoruz. 
+
+SELECT AVG(length) FROM film;
+
+-- SUM fonksiyonu ile sayısal değerlerden oluşan sütunun toplam değerini alırız.
+
+--örneğimizde film tablosunda bulunan length sütunundaki değerlerin toplamını alırız
+
+SELECT SUM(length) FROM film;
+
+--MAX fonksiyonu ile sayısal değerlerden oluşan sütunun en yüksek değerini alırız.
+
+--örneğizde  film tablosunda bulunan length sütunundaki değerlerin en yüksek değerini alırız.
+
+SELECT MAX(length)  FROM film;
+
+-- MIN fonksiyonu ile sayısal değerlerden oluşan sütunun en düşük değerini alırız.
+
+--örneğimizde film tablosunda bulunan length sütunundaki değerlerin en düşük değerini alırız.
+
+SELECT MIN(length) FROM film;

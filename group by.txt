@@ -1,0 +1,11 @@
+/*dvdrental veritabanında rental_rate sütununda bizim 3 farklı değerimiz var (0.99, 2.99, 4.99).
+Biz bu 3 farklı değer için en uzun filmi bulmaya çalışalım.
+*/
+
+SELECT MAX(length)  FROM film WHERE rental_rate In ( 0.99 , 2.99 ,4.99);
+
+/*Yukarıdaki senaryomuzu GROUP BY anahtar kelimesini kullanarak gerçekleştirelim. Dikkat ettiğiniz üzere 
+SELECT ile kullanılan rental_rate sütunu GROUP BY satırında da kullanılmıştır.
+*/
+
+SELECT rental_rate, MAX(length) FROM film GROUP BY rental_rate;

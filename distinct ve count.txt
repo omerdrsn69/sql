@@ -1,0 +1,24 @@
+--Bazı durumlarda bir sütun içerisinde bulunan farklı değerleri görmek isteriz.
+
+SELECT DISTINCT rental_rate FROM film;
+
+-- yukarıdakisorgu bize rental_rate sütununda bulunan birinden farklı 2.99, 0.99, 4.99 verilerini gösterir.
+
+/*SELECT DISTINCT Söz Dizimi
+
+SELECT DISTINCT <sütun_adı>, <sütun_adı>, ...
+FROM <tablo_adı>;
+*/
+
+/*COUNT aggregate fonksiyonu ilgili sorgu sonucunda oluşan veri sayısını bildirir. */
+
+/*sorgumuzda ismi 'Penelope' olan aktörleri sıralıyoruz.*/
+
+SELECT * FROM actor WHERE first_name = 'Penelope';
+
+/*ancak veri sayısını bulmak istersek COUNT fonksiyonunu kullanırız.*/
+
+SELECT COUNT(*) FROM actor WHERE first_name = 'Penelope';
+
+/*Yukarıda da belirttiğimiz gibi COUNT fonksiyonu ile sorgu sonucunda ortaya verileri sayıyoruz. 
+Bu nedenle COUNT(*) veya COUNT(sütun_adı) aynı sonucu verir.*/
